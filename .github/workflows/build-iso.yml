@@ -55,8 +55,8 @@ jobs:
             echo "Using custom kernel $HELIOS_KERNEL"
           fi
           chmod +x auto/* config/hooks/live/* \
-            config/includes.chroot_after_packages/usr/bin/helium \
-            config/includes.chroot_after_packages/usr/libexec/helium-firstboot
+            config/includes.chroot_after_packages/usr/bin/* \
+            config/includes.chroot_after_packages/usr/libexec/*
           ./auto/config
           lb build
           sha256sum *.iso > SHA256SUMS
