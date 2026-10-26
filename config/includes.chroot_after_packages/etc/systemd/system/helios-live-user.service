@@ -1,0 +1,12 @@
+[Unit]
+Description=Helios live session user
+After=live-config.service
+Before=display-manager.service sddm.service
+ConditionKernelCommandLine=boot=live
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/helios-live-user
+
+[Install]
+WantedBy=multi-user.target
