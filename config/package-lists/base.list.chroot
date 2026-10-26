@@ -1,0 +1,2 @@
+systemd-sysv systemd-resolved network-manager sudo locales btrfs-progs snapper
+systemd-zram-generator unattended-upgrades fwupd flatpak rtkit curl ca-certificates python3
