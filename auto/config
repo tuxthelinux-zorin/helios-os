@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+# HELIOS_KERNEL=6.12.40-helios uses the custom kernel from config/packages.chroot
+KFLAVOUR="${HELIOS_KERNEL:-amd64}"
+lb config noauto \
+  --distribution trixie --architectures amd64 \
+  --archive-areas 'main contrib non-free non-free-firmware' \
+  --mirror-bootstrap http://deb.debian.org/debian \
+  --mirror-chroot http://deb.debian.org/debian \
+  --mirror-binary http://deb.debian.org/debian \
+  --security true --updates true --backports false \
+  --apt-recommends false --apt-indices false \
+  --binary-images iso-hybrid --bootloaders 'syslinux,grub-efi' \
+  --debian-installer none --memtest none \
+  --linux-flavours "$KFLAVOUR" \
+  --chroot-squashfs-compression-type zstd \
+  --image-name helios \
+  --iso-application 'Helios OS' --iso-publisher 'Helios Project' --iso-volume 'HELIOS_1_0' \
+  --bootappend-live 'boot=live components quiet splash' \
+  --checksums sha256 --source false \
+  "${@}"
