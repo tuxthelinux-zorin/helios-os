@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
 apt-get -y purge --auto-remove popularity-contest reportbug 2>/dev/null || true
-systemctl enable NetworkManager NetworkManager-wait-online systemd-timesyncd fstrim.timer sddm helium-firstboot.service || true
+systemctl enable NetworkManager NetworkManager-wait-online systemd-timesyncd fstrim.timer sddm helium-firstboot.service helios-live-user.service || true
 rm -f /etc/ssh/ssh_host_*
 : > /etc/machine-id
