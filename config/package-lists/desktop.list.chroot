@@ -1,0 +1,8 @@
+plasma-desktop plasma-workspace plasma-integration breeze kwin-wayland qt6-wayland
+sddm sddm-theme-breeze kde-config-sddm systemsettings plasma-nm plasma-pa powerdevil
+kscreen bluedevil xdg-desktop-portal-kde polkit-kde-agent-1 kde-cli-tools kio-extras
+plasma-discover plasma-discover-backend-flatpak plasma-systemmonitor
+dolphin konsole kate ark breeze-icon-theme xdg-user-dirs
+fonts-noto-core fonts-noto-color-emoji plymouth plymouth-themes
+pipewire-audio pipewire-jack pipewire-alsa wireplumber
+mesa-vulkan-drivers libgl1-mesa-dri mesa-va-drivers vulkan-tools xwayland
