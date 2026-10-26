@@ -1,2 +1,3 @@
 systemd-sysv systemd-resolved network-manager sudo locales btrfs-progs snapper
 systemd-zram-generator unattended-upgrades fwupd flatpak rtkit curl ca-certificates python3
+live-boot live-config live-config-systemd user-setup keyboard-configuration console-setup tzdata libpam-systemd
