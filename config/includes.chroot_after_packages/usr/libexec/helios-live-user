@@ -1,0 +1,11 @@
+#!/bin/bash
+# Live session only: make sure the login user exists (user / live).
+u=user
+if ! id "$u" >/dev/null 2>&1; then
+  groups=""
+  for g in sudo audio video plugdev netdev render input; do getent group "$g" >/dev/null && groups="$groups,$g"; done
+  useradd -m -s /bin/bash ${groups:+-G ${groups#,}} "$u"
+fi
+echo "$u:live" | chpasswd
+printf '%s ALL=(ALL) NOPASSWD: ALL\n' "$u" > /etc/sudoers.d/helios-live
+chmod 440 /etc/sudoers.d/helios-live
