@@ -1,0 +1,14 @@
+#!/bin/bash
+# Runs once on the installed system: adds app sources and installs default apps.
+mkdir -p /var/lib/helium
+flatpak remote-add --system --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo || exit 1
+if ! grep -q 'YOUR-URL' /etc/helium/helium.flatpakrepo; then
+  flatpak remote-add --system --if-not-exists helium /etc/helium/helium.flatpakrepo || true
+fi
+fail=0
+while read -r app; do
+  case "$app" in ''|\#*) continue ;; esac
+  helium install -y "$app" || fail=1
+done < /etc/helium/default-apps.list
+[ "$fail" = 0 ] && touch /var/lib/helium/firstboot.done
+exit 0
