@@ -1,0 +1,15 @@
+[Plugins]
+blurEnabled=true
+contrastEnabled=true
+slidingpopupsEnabled=true
+magiclampEnabled=true
+
+[Effect-blur]
+BlurStrength=9
+NoiseStrength=2
+
+[org.kde.kdecoration2]
+library=org.kde.breeze
+theme=Breeze
+ButtonsOnLeft=XIA
+ButtonsOnRight=
