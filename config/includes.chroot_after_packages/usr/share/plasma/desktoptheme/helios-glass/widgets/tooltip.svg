@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+ <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="42"><stop offset="0" stop-color="rgb(16,20,40)" stop-opacity="0.62"/><stop offset="1" stop-color="rgb(16,20,40)" stop-opacity="0.52"/></linearGradient></defs>
+  <g id="topleft"><path d="M0,14 A14,14 0 0 1 14,0 L14,14 Z" fill="url(#g)"/><path d="M0.75,14 A13.25,13.25 0 0 1 14,0.75" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="top"><rect x="14" y="0" width="14" height="14" fill="url(#g)"/><path d="M14,0.75 L28,0.75" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="topright"><path d="M28,0 A14,14 0 0 1 42,14 L28,14 Z" fill="url(#g)"/><path d="M28,0.75 A13.25,13.25 0 0 1 41.25,14" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="left"><rect x="0" y="14" width="14" height="14" fill="url(#g)"/><path d="M0.75,14 L0.75,28" fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="center"><rect x="14" y="14" width="14" height="14" fill="url(#g)"/></g>
+  <g id="right"><rect x="28" y="14" width="14" height="14" fill="url(#g)"/><path d="M41.25,14 L41.25,28" fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="bottomleft"><path d="M0,28 A14,14 0 0 0 14,42 L14,28 Z" fill="url(#g)"/><path d="M0.75,28 A13.25,13.25 0 0 0 14,41.25" fill="none" stroke="#fff" stroke-opacity="0.14" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="bottom"><rect x="14" y="28" width="14" height="14" fill="url(#g)"/><path d="M14,41.25 L28,41.25" fill="none" stroke="#fff" stroke-opacity="0.14" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="bottomright"><path d="M42,28 A14,14 0 0 1 28,42 L28,28 Z" fill="url(#g)"/><path d="M41.25,28 A13.25,13.25 0 0 1 28,41.25" fill="none" stroke="#fff" stroke-opacity="0.14" stroke-width="1.5" stroke-linecap="round"/></g>
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="8" fill="none"/>
+  <rect id="hint-bottom-margin" x="0" y="0" width="1" height="8" fill="none"/>
+  <rect id="hint-left-margin" x="0" y="0" width="8" height="1" fill="none"/>
+  <rect id="hint-right-margin" x="0" y="0" width="8" height="1" fill="none"/>
+  <rect id="hint-stretch-borders" x="0" y="0" width="1" height="1" fill="none"/>
+</svg>
