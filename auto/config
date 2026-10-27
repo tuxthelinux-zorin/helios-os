@@ -11,7 +11,7 @@ lb config noauto \
   --security true --updates true --backports false \
   --apt-recommends false --apt-indices false \
   --binary-images iso-hybrid --bootloaders 'syslinux,grub-efi' \
-  --debian-installer none --memtest none \
+  --debian-installer live --debian-installer-gui true --memtest none \
   --linux-flavours "$KFLAVOUR" \
   --chroot-squashfs-compression-type zstd \
   --image-name helios \
