@@ -1,0 +1,15 @@
+{
+  "KPlugin": {
+    "Id": "org.helios.glass",
+    "Name": "Helios Glass",
+    "Description": "Liquid-glass desktop for Helios OS",
+    "Authors": [
+      {
+        "Name": "Helios Project"
+      }
+    ],
+    "Version": "1.0",
+    "License": "GPL-3.0+"
+  },
+  "KPackageStructure": "Plasma/LookAndFeel"
+}
