@@ -1,0 +1,9 @@
+[KDE]
+LookAndFeelPackage=org.helios.glass
+widgetStyle=Breeze
+
+[General]
+ColorScheme=HeliosGlass
+
+[Icons]
+Theme=breeze-dark
