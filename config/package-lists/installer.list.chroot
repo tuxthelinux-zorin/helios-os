@@ -1,1 +1,1 @@
-calamares calamares-settings-debian grub-efi-amd64 grub-efi-amd64-signed shim-signed grub-pc-bin grub-common cryptsetup rsync
+grub-efi-amd64 grub-efi-amd64-signed shim-signed grub-pc-bin grub-common cryptsetup
