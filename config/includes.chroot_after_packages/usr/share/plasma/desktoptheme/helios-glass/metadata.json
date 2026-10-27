@@ -1,0 +1,15 @@
+{
+  "KPlugin": {
+    "Id": "helios-glass",
+    "Name": "Helios Glass",
+    "Description": "Frosted glass panels and popups",
+    "Authors": [
+      {
+        "Name": "Helios Project"
+      }
+    ],
+    "Version": "1.0",
+    "License": "GPL-2.0+"
+  },
+  "KPackageStructure": "Plasma/Theme"
+}
