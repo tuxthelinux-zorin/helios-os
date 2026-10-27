@@ -1,0 +1,12 @@
+{
+  "KPlugin": {
+    "Id": "HeliosGlass",
+    "Name": "Helios Glass",
+    "Authors": [
+      {
+        "Name": "Helios Project"
+      }
+    ],
+    "License": "CC-BY-SA-4.0"
+  }
+}
