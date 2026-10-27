@@ -1,6 +1,6 @@
 # Helios OS
 
-Debian 13 base, KDE Plasma (Wayland), Btrfs + snapshots, Flatpak-first apps, `helium` package manager, optional custom kernel.
+Debian 13 base, **Helios Glass** desktop (KDE Plasma re-skinned with frosted-glass panels, floating dock), Debian Installer (live mode), Flatpak-first apps, `helium` package manager, optional custom kernel.
 **Untested draft.** Live login: user / live.
 
 ## Build the ISO
@@ -51,3 +51,15 @@ Know before you ship it:
 - Debian 13's NVIDIA proprietary driver will probably not build against 7.3. Expect Intel/AMD/nouveau only until Debian ships a newer driver.
 - The kernel is NOT signed, so it will not boot with Secure Boot on.
 - Test with the stock kernel first.
+
+## Helios Glass desktop
+Not a from-scratch desktop: it is KDE Plasma 6 with a custom look-and-feel package (`org.helios.glass`) that applies on first login:
+frosted-glass panels and popups (KWin blur + a custom Plasma theme with specular rim lighting), a floating top bar, a floating auto-hiding
+glass dock, mac-style window buttons, a glass terminal, an aurora wallpaper and matching login screen. Files live under
+`config/includes.chroot_after_packages/usr/share/` (plasma/desktoptheme, plasma/look-and-feel, color-schemes, wallpapers) and `etc/xdg/`.
+It is "frosted glass", not true Apple-style refraction: real lens/refraction effects need a compositor shader (a custom KWin effect in C++).
+Blur needs working 3D acceleration, so inside VirtualBox it may look flat or be slow.
+
+## Installer
+The graphical Debian Installer (live mode) installs the live system to disk. Answers are in `config/includes.installer/preseed.cfg`.
+Language, keyboard, disk and user are asked interactively. Choose "Graphical install" from the boot menu.
