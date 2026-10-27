@@ -1,0 +1,17 @@
+[kdeglobals][General]
+ColorScheme=HeliosGlass
+
+[kdeglobals][Icons]
+Theme=breeze-dark
+
+[kdeglobals][KDE]
+widgetStyle=Breeze
+
+[plasmarc][Theme]
+name=helios-glass
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.breeze
+theme=Breeze
+ButtonsOnLeft=XIA
+ButtonsOnRight=
